@@ -31,7 +31,7 @@ $ sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 222
 
 ## Troubleshooting
 Using above commands to run the docker container you will catch an internal IP of docker (e.g. 172.17.0.1) into the cowrie's logs as source host.
-In order to catch the real public IP address of the source host is better to use below command to start the contaner (without port forwarding with *iptables*):
+In order to catch the public IP address of the source host is better to use below command to start the container (without port forwarding with *iptables*):
 ```
 $ docker run -it -p 22:2222 -p 23:2223 cowrie
 ```
