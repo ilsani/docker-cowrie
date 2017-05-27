@@ -4,7 +4,7 @@ Official repo: [https://github.com/micheloosterhof/cowrie](https://github.com/mi
 
 ## Setup docker container
 ```
-https://github.com/ilsani/docker-cowrie
+git clone https://github.com/ilsani/docker-cowrie
 ```
 ```
 docker build -t cowrie .
